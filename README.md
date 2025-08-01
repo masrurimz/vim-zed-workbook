@@ -25,10 +25,19 @@ Master vim efficiently in Zed editor with hands-on exercises and optimized key b
 
 | Category | Description | Files |
 |----------|-------------|-------|
-| **[JavaScript](exercises/javascript/)** | JS/TS practice | Basic syntax, text objects |
-| **[Python](exercises/python/)** | Python examples | Functions, classes, imports |
-| **[HTML/CSS](exercises/html-css/)** | Frontend practice | Tags, selectors, layouts |
-| **[Refactoring](exercises/refactoring/)** | Code improvement | Before/after examples |
+| **[JavaScript](exercises/javascript/)** | JS/TS practice | Basic syntax, text objects, refactoring |
+| **[Python](exercises/python/)** | Python examples | Functions, classes, text objects, refactoring |
+| **[HTML/CSS](exercises/html-css/)** | Frontend practice | Tags, selectors, JSX components |
+| **[Refactoring](exercises/refactoring/)** | Code improvement | Before/after examples, challenges |
+
+### 🏆 Advanced Challenges
+
+| Category | Description | Skills Tested |
+|----------|-------------|---------------|
+| **[Speed Trials](challenges/speed-trials.md)** | Timed efficiency tests | Keystroke optimization, muscle memory |
+| **[Refactoring Scenarios](challenges/refactoring-scenarios.md)** | Complex code transformations | Multi-file editing, architecture |
+| **[Code Golf](challenges/code-golf.md)** | Minimal keystroke puzzles | Creative problem solving |
+| **[Daily Practice](challenges/daily-practice/)** | 7-day skill cycles | Consistent improvement |
 
 ## ✨ Key Features
 
@@ -102,8 +111,10 @@ Found an issue or have a suggestion?
 ## 📖 Reference Materials
 
 - **[Cheat Sheet](reference/cheat-sheet.md)** - Quick key binding reference
-- **[Workflows](reference/workflows.md)** - Common development patterns
+- **[Workflows](reference/workflows.md)** - Common development patterns  
+- **[Advanced Techniques](reference/advanced-techniques.md)** - Expert-level vim mastery
 - **[Troubleshooting](reference/troubleshooting.md)** - Common issues and fixes
+- **[AI-Assisted Learning](setup/CLAUDE.md)** - Structured learning with AI
 
 ## 🎉 Success Stories
 

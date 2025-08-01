@@ -1,0 +1,327 @@
+{
+  // ===== VIM-ZED OPTIMIZED SETTINGS =====
+  "confirm_quit": true,
+  "vim_mode": true,
+  
+  // ===== THEME & APPEARANCE =====
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte", 
+    "dark": "Catppuccin Macchiato"
+  },
+  "icon_theme": {
+    "dark": "Catppuccin Macchiato",
+    "light": "Catppuccin Latte",
+    "mode": "system"
+  },
+  "active_pane_modifiers": {
+    "border_size": 2.0,
+    "inactive_opacity": 0.6
+  },
+
+  // ===== VIM-OPTIMIZED FONTS =====
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_fallbacks": ["JetBrainsMono Nerd Font", "Monaco", "Menlo", "Consolas"],
+  "buffer_font_size": 13,
+  "buffer_font_features": {
+    "liga": true,
+    "calt": true
+  },
+  "buffer_font_weight": 400,
+  "buffer_line_height": "comfortable",
+
+  "ui_font_family": "Inter",
+  "ui_font_size": 12,
+  "ui_font_weight": 400,
+
+  // ===== VIM MODE ENHANCEMENTS =====
+  "base_keymap": "JetBrains", // Good base for vim users
+  "relative_line_numbers": true, // Critical for vim navigation
+  "cursor_blink": false, // Solid cursor for vim modes
+  "cursor_shape": "block", // Traditional vim cursor
+  
+  // ===== EDITOR BEHAVIOR =====
+  "tab_size": 2,
+  "hard_tabs": false,
+  "wrap_guides": [80, 120],
+  "preferred_line_length": 80,
+  "soft_wrap": "none", // Vim users prefer no wrapping
+  "show_wrap_guides": true,
+  
+  // Auto-save/format settings optimized for vim workflow
+  "autosave": "off", // Vim users control saves manually
+  "format_on_save": "on",
+  "ensure_final_newline_on_save": true,
+  "remove_trailing_whitespace_on_save": true,
+  
+  // ===== VIM NAVIGATION ENHANCEMENTS =====
+  "scroll_beyond_last_line": "one_page",
+  "scrollbar": {
+    "show": "auto",
+    "cursors": true,
+    "diagnostics": "all",
+    "git_diff": true,
+    "search_results": true
+  },
+  
+  // Gutter settings for vim users
+  "gutter": {
+    "line_numbers": true,
+    "folds": true,
+    "code_actions": true
+  },
+
+  // ===== SEARCH OPTIMIZATION =====
+  "search": {
+    "whole_word": false,
+    "case_sensitive": false,
+    "include_ignored": false,
+    "regex": true // Enable regex by default for vim users
+  },
+  "seed_search_query_from_cursor": "always",
+
+  // ===== TERMINAL INTEGRATION =====
+  "terminal": {
+    "font_family": "JetBrainsMono Nerd Font",
+    "font_size": 13,
+    "font_features": {
+      "liga": true
+    },
+    "shell": {
+      "program": "/bin/zsh"
+    },
+    "working_directory": "current_project_directory",
+    "env": {
+      "TERM": "xterm-256color"
+    },
+    "blinking": "off", // Consistent with vim cursor
+    "copy_on_select": false, // Vim-like behavior
+    "dock": "bottom",
+    "default_height": 400,
+    "toolbar": {
+      "breadcrumbs": true
+    }
+  },
+
+  // ===== CODE COMPLETION =====
+  "show_completions_on_input": true,
+  "show_completion_documentation": true,
+  "use_on_type_format": false, // Less intrusive for vim users
+  
+  // Inlay hints - minimal for vim users
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": false, // Can be distracting
+    "show_parameter_hints": true,
+    "show_other_hints": false,
+    "edit_debounce_ms": 1000,
+    "scroll_debounce_ms": 100
+  },
+
+  // ===== PROJECT NAVIGATION =====
+  "project_panel": {
+    "dock": "left",
+    "default_width": 280,
+    "file_icons": true,
+    "folder_icons": true,
+    "git_status": true,
+    "indent_size": 16,
+    "entry_spacing": "compact", // More content visible
+    "auto_reveal_entries": false, // Less distracting
+    "auto_fold_dirs": true,
+    "button": true,
+    "scrollbar": {
+      "show": "auto"
+    }
+  },
+
+  // ===== PANEL LAYOUT FOR VIM WORKFLOW =====
+  "outline_panel": {
+    "dock": "right",
+    "default_width": 300
+  },
+  "collaboration_panel": {
+    "dock": "left",
+    "default_width": 240
+  },
+  "chat_panel": {
+    "dock": "right", 
+    "default_width": 400
+  },
+  "notification_panel": {
+    "dock": "bottom"
+  },
+
+  // ===== TABS & BUFFERS =====
+  "tabs": {
+    "file_icons": true,
+    "git_status": true,
+    "show_diagnostics": "all"
+  },
+  
+  // Preview tabs for quick navigation
+  "preview_tabs": {
+    "enabled": true,
+    "enable_preview_from_file_finder": true,
+    "enable_preview_from_code_navigation": true
+  },
+
+  // ===== GIT INTEGRATION =====
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": false, // Can be distracting during editing
+      "delay_ms": 1000
+    }
+  },
+
+  // ===== AI ASSISTANT CONFIGURATION =====
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+  "agent": {
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4"
+    },
+    "default_model": {
+      "provider": "copilot_chat", 
+      "model": "claude-3.5-sonnet"
+    }
+  },
+  
+  // Edit predictions - helpful for vim users
+  "show_edit_predictions": true,
+
+  // ===== PERFORMANCE OPTIMIZATIONS =====
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn", 
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/node_modules",
+    "**/target",
+    "**/build",
+    "**/dist",
+    "**/coverage",
+    "**/.nyc_output",
+    "**/.cache",
+    "**/.tmp",
+    "**/tmp"
+  ],
+
+  // ===== LANGUAGE-SPECIFIC SETTINGS =====
+  "languages": {
+    "JavaScript": {
+      "tab_size": 2,
+      "format_on_save": "on",
+      "hard_tabs": false,
+      "preferred_line_length": 80
+    },
+    "TypeScript": {
+      "tab_size": 2,
+      "format_on_save": "on", 
+      "hard_tabs": false,
+      "preferred_line_length": 80
+    },
+    "TSX": {
+      "tab_size": 2,
+      "format_on_save": "on",
+      "hard_tabs": false
+    },
+    "JSON": {
+      "tab_size": 2,
+      "format_on_save": "on",
+      "hard_tabs": false
+    },
+    "HTML": {
+      "tab_size": 2,
+      "format_on_save": "on",
+      "hard_tabs": false
+    },
+    "CSS": {
+      "tab_size": 2,
+      "format_on_save": "on",
+      "hard_tabs": false
+    },
+    "Markdown": {
+      "tab_size": 2,
+      "format_on_save": "on",
+      "hard_tabs": false,
+      "soft_wrap": "editor_width",
+      "wrap_guides": [],
+      "preferred_line_length": 80
+    },
+    "Python": {
+      "tab_size": 4,
+      "format_on_save": "on",
+      "formatter": "language_server",
+      "hard_tabs": false,
+      "preferred_line_length": 88
+    },
+    "Go": {
+      "tab_size": 4,
+      "format_on_save": "on",
+      "formatter": "language_server", 
+      "hard_tabs": true,
+      "preferred_line_length": 100
+    },
+    "Rust": {
+      "tab_size": 4,
+      "format_on_save": "on",
+      "hard_tabs": false,
+      "preferred_line_length": 100
+    }
+  },
+
+  // ===== CODE ACTIONS & FORMATTING =====
+  "formatter": {
+    "code_actions": {
+      "source.fixAll.eslint": true,
+      "source.organizeImports": true
+    }
+  },
+  "code_actions_on_format": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true
+  },
+
+  // ===== PRIVACY & TELEMETRY =====
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+
+  // ===== STARTUP & SESSION =====
+  "restore_on_startup": "last_workspace",
+  "when_closing_with_no_tabs": "keep_window_open",
+  "auto_update": true,
+  "auto_install_extensions": {
+    "enabled": false // Manual control preferred
+  },
+
+  // ===== VISUAL ENHANCEMENTS =====
+  "indent_guides": {
+    "line_width": 1,
+    "active_line_width": 2,
+    "coloring": "indent_aware",
+    "background_coloring": "disabled"
+  },
+
+  // ===== EXPERIMENTAL FEATURES =====
+  "experimental.theme_overrides": {
+    "syntax": {
+      "keyword": {
+        "font_style": "italic"
+      },
+      "type": {
+        "font_style": "italic" 
+      },
+      "comment": {
+        "font_style": "italic"
+      }
+    }
+  }
+}

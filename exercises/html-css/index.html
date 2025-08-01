@@ -1,0 +1,202 @@
+<!-- Vim Practice File - HTML Structure -->
+<!-- Use this file to practice vim movements and HTML text objects -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Exercise 1: Practice tag text objects (it, at) on meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vim practice page for HTML editing">
+    <title>Vim HTML Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Exercise 2: Navigation structure - practice on nested tags -->
+    <nav class="main-navigation">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#home">Home</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#services">Services</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Exercise 3: Header section with multiple nested elements -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Welcome to Vim Practice</h1>
+            <p class="page-subtitle">Master HTML editing with text objects</p>
+            <button class="cta-button" type="button">Get Started</button>
+        </div>
+    </header>
+
+    <!-- Exercise 4: Main content with various HTML structures -->
+    <main class="main-content">
+        <!-- TODO: Practice cit/cat to change "About Section" to "Introduction" -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Section</h2>
+                <p class="section-description">
+                    This is a practice file for learning vim text objects with HTML.
+                    Use <strong>cit</strong> to change inner tag content and 
+                    <strong>cat</strong> to change around tag including the tags themselves.
+                </p>
+                
+                <!-- Practice on image tag attributes -->
+                <img src="practice-image.jpg" alt="Practice image for vim editing" class="section-image">
+            </div>
+        </section>
+
+        <!-- Exercise 5: Article with complex nested structure -->
+        <article class="blog-post">
+            <header class="post-header">
+                <h3 class="post-title">Vim Text Objects Guide</h3>
+                <p class="post-meta">
+                    Published on <time datetime="2024-01-01">January 1, 2024</time>
+                </p>
+            </header>
+            
+            <div class="post-content">
+                <!-- TODO: Use dit to delete inner tag content, dat to delete entire tag -->
+                <p class="intro-paragraph">
+                    Text objects in vim allow you to quickly select and manipulate 
+                    content within various delimiters like tags, quotes, and brackets.
+                </p>
+                
+                <!-- Practice list editing -->
+                <h4>Common Text Objects:</h4>
+                <ul class="text-object-list">
+                    <li><code>it</code> - inner tag content</li>
+                    <li><code>at</code> - around tag (including tags)</li>
+                    <li><code>i"</code> - inner quotes</li>
+                    <li><code>a"</code> - around quotes</li>
+                </ul>
+                
+                <!-- TODO: Practice changing attributes using vim-surround -->
+                <blockquote class="quote" data-author="vim-user">
+                    "Vim text objects make editing incredibly efficient once you learn them."
+                </blockquote>
+            </div>
+        </article>
+
+        <!-- Exercise 6: Form elements for attribute practice -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact Form</h2>
+                
+                <!-- TODO: Practice editing form attributes and structure -->
+                <form class="contact-form" method="post" action="/submit">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-textarea" rows="4" cols="50">
+Your message here...
+                        </textarea>
+                    </div>
+                    
+                    <!-- Practice on button attributes -->
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Exercise 7: Table structure for complex tag practice -->
+        <section class="data-section">
+            <div class="container">
+                <h2 class="section-title">Data Table</h2>
+                
+                <!-- TODO: Practice editing table cells with text objects -->
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Role</th>
+                            <th scope="col">Department</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-row">
+                            <td class="table-cell">John Doe</td>
+                            <td class="table-cell">Developer</td>
+                            <td class="table-cell">Engineering</td>
+                            <td class="table-cell">Active</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="table-cell">Jane Smith</td>
+                            <td class="table-cell">Designer</td>
+                            <td class="table-cell">Creative</td>
+                            <td class="table-cell">Active</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Exercise 8: Footer with nested structure -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://vimhelp.org" target="_blank">Vim Help</a></li>
+                        <li><a href="https://vim.fandom.com" target="_blank">Vim Wiki</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- TODO: Practice changing copyright text with cit -->
+            <p class="copyright">&copy; 2024 Vim Practice. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Practice JavaScript in HTML context -->
+    <script>
+        // TODO: Practice vim text objects on JavaScript within HTML
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.cta-button, .submit-button');
+            buttons.forEach(button => {
+                button.addEventListener('click', function(event) {
+                    console.log('Button clicked:', event.target.textContent);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+<!-- 
+PRACTICE CHALLENGES:
+1. Change "Welcome to Vim Practice" to "Master Vim Editing" using cit
+2. Replace entire <p> tag content while preserving the tag structure
+3. Change class attribute values: class="main-navigation" to class="primary-nav"
+4. Convert <strong> tags to <em> tags using vim-surround (cs or similar)
+5. Duplicate entire <li> elements and modify their content
+6. Change form method from "post" to "get" in the form tag
+7. Replace table cell content without affecting the <td> tags
+8. Change href attribute values in navigation links
+9. Modify alt text in image tags
+10. Update the year in copyright from 2024 to 2025
+-->
